@@ -12,5 +12,6 @@ exports.paginaInicial = (req, res, next) => {
 };
 
 exports.trataPost = (req, res) => {
-  res.send(req.nome);
+  
+  res.send(req.body._csrf)
 };
