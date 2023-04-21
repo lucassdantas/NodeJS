@@ -3,7 +3,12 @@
   <section class="container">
     <h1> <%= variavel %></h1>
     <p><%= teste123 %></p>
-
+    <form action="#" method='post'>
+      <input type='hidden' name='_csrf' value="<%= csrf %>">
+      <label>nome</label>
+      <input type='text' name='nome'>
+      <input type='submit'>
+    </form>
   </section>
 
   <%- include('includes/footer')%>
